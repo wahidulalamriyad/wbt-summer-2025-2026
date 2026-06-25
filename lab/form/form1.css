@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  background: #e8e8eb;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark header */
+.card-header {
+  background: #141d33;
+  padding: 32px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7a8bff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #6b7cff;
+  border-radius: 3px;
+}
+
+.card-header h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+/* Body */
+.card-body {
+  padding: 32px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2b3247;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  background: #eef0f6;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #2b3247;
+}
+
+input::placeholder {
+  color: #9aa0ac;
+}
+
+input[type="date"] {
+  color: #6c7bef;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input:focus {
+  outline: 2px solid #6b7cff;
+}
+
+/* Checkboxes */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b3247;
+  margin-bottom: 14px;
+}
+
+.check input {
+  width: 20px;
+  height: 20px;
+  accent-color: #6b7cff;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 12px;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  flex: 1;
+  background: #6b7cff;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #eef0f6;
+  color: #2b3247;
+  padding-left: 32px;
+  padding-right: 32px;
+}
